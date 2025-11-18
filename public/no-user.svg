@@ -1,0 +1,282 @@
+<svg
+  width="720"
+  height="440"
+  viewBox="0 0 720 440"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">No users yet</title>
+  <desc id="desc">
+    Object-based empty state: central user badge surrounded by interface cards and icons,
+    indicating there are no users yet. Main accent color is #39cdcc.
+  </desc>
+
+  <defs>
+    <!-- Accent gradient using #39cdcc -->
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#39cdcc" />
+      <stop offset="100%" stop-color="#2ba3a2" />
+    </linearGradient>
+
+    <linearGradient id="softBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5f7f8" />
+      <stop offset="100%" stop-color="#d3edf0" />
+    </linearGradient>
+
+    <linearGradient id="softYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe6a3" />
+      <stop offset="100%" stop-color="#ffd16b" />
+    </linearGradient>
+
+    <linearGradient id="softPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd5e3" />
+      <stop offset="100%" stop-color="#ffb4cf" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="440" rx="32" fill="#ffffff" />
+  <rect width="720" height="440" rx="32" fill="#f7fbfb" />
+
+  <!-- Ground line -->
+  <line
+    x1="70"
+    y1="330"
+    x2="650"
+    y2="330"
+    stroke="#e1ebec"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- Left small plant (just to avoid it being too sterile) -->
+  <g stroke="#9ba7a7" stroke-width="2" stroke-linecap="round">
+    <line x1="90" y1="330" x2="90" y2="304" />
+    <line x1="90" y1="308" x2="84" y2="298" />
+    <line x1="90" y1="312" x2="96" y2="302" />
+    <circle cx="110" cy="323" r="4.5" fill="#ffd16b" stroke="none" />
+    <line x1="110" y1="330" x2="110" y2="323" />
+  </g>
+
+  <!-- Central badge for "no users" -->
+  <g>
+    <!-- Outer soft halo -->
+    <circle cx="360" cy="215" r="90" fill="#e4f6f6" />
+
+    <!-- Main ring -->
+    <circle
+      cx="360"
+      cy="215"
+      r="64"
+      fill="#ffffff"
+      stroke="url(#accent)"
+      stroke-width="4"
+    />
+
+    <!-- Inner avatar outline (generic user icon) -->
+    <circle
+      cx="360"
+      cy="203"
+      r="20"
+      fill="none"
+      stroke="#39cdcc"
+      stroke-width="3"
+    />
+    <path
+      d="M334 236
+         Q343 220 360 220
+         Q377 220 386 236"
+      fill="none"
+      stroke="#39cdcc"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+
+    <!-- "Empty" slash -->
+    <line
+      x1="332"
+      y1="187"
+      x2="388"
+      y2="243"
+      stroke="#39cdcc"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-opacity="0.9"
+    />
+  </g>
+
+  <!-- Card: "User list" on the left -->
+  <g transform="translate(150,140)">
+    <rect
+      x="-80"
+      y="-40"
+      width="150"
+      height="145"
+      rx="18"
+      fill="url(#softBlue)"
+      stroke="#d6e9eb"
+      stroke-width="2"
+    />
+    <!-- Header pill -->
+    <rect x="-64" y="-26" width="72" height="16" rx="8" fill="#ffffff" opacity="0.7" />
+    <circle cx="-56" cy="-18" r="3" fill="#39cdcc" />
+    <rect x="-48" y="-22" width="33" height="8" rx="4" fill="#c5e9eb" />
+
+    <!-- Row 1 -->
+    <circle cx="-56" cy="4" r="8" fill="#ffffff" />
+    <rect x="-42" y="-1" width="60" height="6" rx="3" fill="#ffffff" opacity="0.8" />
+    <rect x="-42" y="8" width="35" height="5" rx="2.5" fill="#cce5e7" />
+
+    <!-- Row 2 -->
+    <circle cx="-56" cy="32" r="8" fill="#ffffff" />
+    <rect x="-42" y="27" width="52" height="6" rx="3" fill="#ffffff" opacity="0.8" />
+    <rect x="-42" y="36" width="40" height="5" rx="2.5" fill="#cce5e7" />
+
+    <!-- Row 3 -->
+    <circle cx="-56" cy="60" r="8" fill="#ffffff" />
+    <rect x="-42" y="55" width="44" height="6" rx="3" fill="#ffffff" opacity="0.8" />
+    <rect x="-42" y="64" width="30" height="5" rx="2.5" fill="#cce5e7" />
+
+    <!-- "0 users" chip -->
+    <rect x="-34" y="88" width="70" height="18" rx="9" fill="#ffffff" />
+    <circle cx="-24" cy="97" r="4" fill="#39cdcc" />
+    <rect x="-16" y="92" width="42" height="8" rx="4" fill="#cce5e7" />
+  </g>
+
+  <!-- Card: analytics / charts on the right -->
+  <g transform="translate(510,138)">
+    <rect
+      x="-30"
+      y="-32"
+      width="160"
+      height="130"
+      rx="18"
+      fill="#ffffff"
+      stroke="#e0e7f0"
+      stroke-width="2"
+    />
+    <!-- Tiny header dots -->
+    <circle cx="-14" cy="-18" r="3" fill="#ffd16b" />
+    <circle cx="-2" cy="-18" r="3" fill="#ffb4cf" />
+    <circle cx="10" cy="-18" r="3" fill="#39cdcc" />
+
+    <!-- Mini bar chart -->
+    <rect x="-14" y="0" width="14" height="44" rx="4" fill="#e4f1f2" />
+    <rect x="6" y="-10" width="14" height="54" rx="4" fill="#39cdcc" />
+    <rect x="26" y="8" width="14" height="36" rx="4" fill="#dbe5ff" />
+    <rect x="46" y="16" width="14" height="28" rx="4" fill="#ffd16b" />
+
+    <!-- Mini donut chart -->
+    <circle cx="86" cy="18" r="22" fill="#f4f7fb" />
+    <path
+      d="M86 -4
+         A22 22 0 0 1 106 8
+         L86 18 Z"
+      fill="#39cdcc"
+    />
+    <path
+      d="M106 8
+         A22 22 0 0 1 82 39
+         L86 18 Z"
+      fill="#ffd16b"
+    />
+    <path
+      d="M82 39
+         A22 22 0 0 1 66 10
+         L86 18 Z"
+      fill="#ffb4cf"
+    />
+    <circle cx="86" cy="18" r="9" fill="#ffffff" />
+
+    <!-- Bottom stat lines -->
+    <rect x="-10" y="64" width="55" height="7" rx="3.5" fill="#e4edf7" />
+    <rect x="-10" y="76" width="34" height="6" rx="3" fill="#e4edf7" />
+    <rect x="54" y="64" width="68" height="7" rx="3.5" fill="#e4edf7" />
+    <rect x="54" y="76" width="48" height="6" rx="3" fill="#e4edf7" />
+  </g>
+
+  <!-- Bottom-left tag / folder -->
+  <g transform="translate(220,290)">
+    <!-- Folder -->
+    <path
+      d="M-40 0
+         H5
+         Q15 0 18 10
+         V40
+         Q18 50 8 50
+         H-48
+         Q-58 50 -58 40
+         V10
+         Q-58 0 -48 0 Z"
+      fill="url(#softYellow)"
+    />
+    <rect x="-52" y="10" width="62" height="28" rx="6" fill="#ffecc0" opacity="0.75" />
+    <rect x="-46" y="16" width="28" height="6" rx="3" fill="#f6d185" />
+    <rect x="-46" y="26" width="40" height="5" rx="2.5" fill="#f6d185" opacity="0.8" />
+  </g>
+
+  <!-- Bottom-right notification bell & plus -->
+  <g transform="translate(480,294)">
+    <!-- Bell -->
+    <path
+      d="M30 8
+         Q30 0 38 0
+         Q46 0 46 8
+         L46 20
+         Q46 26 50 30
+         L26 30
+         Q30 26 30 20 Z"
+      fill="url(#softPink)"
+    />
+    <circle cx="38" cy="33" r="4" fill="#ffb4cf" />
+    <!-- Plus badge -->
+    <circle cx="64" cy="10" r="10" fill="url(#accent)" />
+    <rect x="61" y="6" width="6" height="8" rx="3" fill="#ffffff" />
+    <rect x="59" y="8" width="10" height="4" rx="2" fill="#ffffff" />
+  </g>
+
+  <!-- Tiny floating icons around the main badge -->
+  <g>
+    <!-- Tag above -->
+    <rect
+      x="328"
+      y="90"
+      width="64"
+      height="22"
+      rx="11"
+      fill="#ffffff"
+      stroke="#d7e7e7"
+      stroke-width="1.5"
+    />
+    <circle cx="338" cy="101" r="5" fill="#39cdcc" />
+    <rect x="347" y="96" width="34" height="8" rx="4" fill="#cce5e7" />
+  </g>
+
+  <g>
+    <!-- Small chip on the right -->
+    <rect
+      x="430"
+      y="210"
+      width="70"
+      height="24"
+      rx="12"
+      fill="#ffffff"
+      stroke="#d7e7e7"
+      stroke-width="1.5"
+    />
+    <rect x="440" y="216" width="40" height="6" rx="3" fill="#e3eef0" />
+  </g>
+
+  <!-- Caption (optional text, you can remove this) -->
+  <text
+    x="360"
+    y="378"
+    text-anchor="middle"
+    font-size="14"
+    fill="#6f7c7c"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  >
+    No users for this search result — invite people to get this space moving.
+  </text>
+</svg>
