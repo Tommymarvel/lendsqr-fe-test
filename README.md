@@ -6,7 +6,7 @@ A fully responsive admin dashboard application built with React, TypeScript, and
 
 ## 🚀 Live Demo
 
-[View Live Demo](#) <!-- Add your deployment URL here -->
+[View Live Demo](https://marvellous-ibironke-lendsqr-fe-test.vercel.app/) <!-- Add your deployment URL here -->
 
 ## 📋 Table of Contents
 
