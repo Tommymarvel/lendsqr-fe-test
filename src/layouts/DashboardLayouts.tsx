@@ -36,7 +36,11 @@ const navItems: NavItem[] = [
     to: '/decision-models',
     icon: <img src="/icons/decision-models.svg" alt="" />,
   },
-  { label: 'Savings', to: '/savings', icon: <img src="/icons/savings.svg" alt="" /> },
+  {
+    label: 'Savings',
+    to: '/savings',
+    icon: <img src="/icons/savings.svg" alt="" />,
+  },
   {
     label: 'Loan Requests',
     to: '/loan-requests',
