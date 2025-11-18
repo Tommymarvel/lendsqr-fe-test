@@ -1,0 +1,16 @@
+// Reusable mixins
+@mixin visually-hidden() {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+@mixin card($pad: 1rem) {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 1px 3px rgba(2, 6, 23, 0.08);
+  padding: $pad;
+}
